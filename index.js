@@ -39,9 +39,6 @@ app.delete('/vehicles/:id', (req, res) => {
 })
 
 
-
-
-
 app.listen(3000, () => {
     console.log('Iniciado o servidor');
 });
