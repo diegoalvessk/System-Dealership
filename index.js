@@ -30,14 +30,13 @@ app.put('/vehicles/:id', (req, res) => {
     res.status(200).send('Veículo Atualzado com sucesso')
  })
  
- 
+
 app.delete('/vehicles/:id', (req, res) => {
     const vehicle = users.find(x => x.id == req.params.id)
     const idVehicle = users.indexOf(vehicle)
     users.splice(idVehicle, 1)
     res.status(200).send('Veículo deletado com sucesso')
 })
-
 
 app.listen(3000, () => {
     console.log('Iniciado o servidor');
